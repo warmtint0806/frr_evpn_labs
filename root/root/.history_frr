@@ -1,0 +1,62 @@
+show version
+conf t
+router bgp 65001
+bgp router-id 1.1.1.1
+exit
+ls
+exit
+show interface L3VNI101000
+show interface L3VNI102000
+show interface L3VNI101000
+show interface L3VNI102000
+conf t
+router bgp 650001
+exit
+router bgp 65001
+router-id 
+show r
+show run
+exit
+show run
+conf t
+router bgp 65001
+exit
+ls
+ext
+exit
+sho running-config 
+write memory 
+exit
+show run
+conf t
+bgp router-id 1.1.1.1
+router
+router bgp 65001
+bgp router 1.1.1.1
+neighbor 192.168.0.2 remote-as external
+neighbor 192.168.0.2 ebgp-multihop
+address-family ipv4 unicast
+redistribute connected 
+end
+write memory
+exit
+conf t
+router bgp 65001
+address-family l2vpn evpn
+neighbor 192.168.0.2 activate
+advertise-all-vni
+end
+write memory
+exit
+conf t
+vrf vrf-1
+vni 101000
+vrf vrf02
+exit
+vrf vrf-2
+vni 102000
+end
+write memory
+exit
+show run
+show evpn vni 101001
